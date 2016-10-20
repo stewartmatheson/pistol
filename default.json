@@ -1,0 +1,22 @@
+{
+  "TradeRequest": {
+
+    "messages": [
+      {
+        "newBusinessRequest": {
+          "vehicleType" : "string"
+        }
+      }
+    ],
+
+    "operations": [
+      {
+        "newBusinessRequest": {
+          "input" : "newBusinessRequest",
+          "output" : "newBusinessResponse"
+        }
+      }
+    ]
+
+  }
+}
