@@ -1,3 +1,5 @@
+'use strict'
+
 const Handlebars = require('handlebars')
 const fs = require('fs')
 
@@ -18,7 +20,8 @@ function getServiceNameFromPistolConfiguration (pistolConfiguration) {
 }
 
 function getWsdlFromPistolConfiguration (pistolConfiguration) {
-  const wsdlTemplate = fs.readFileSync('wsdl.hbs', 'utf8')
+  //const wsdlTemplate = fs.readFileSync('templates/wsdl.hbs', 'utf8')
+  const wsdlTemplate = fs.readFileSync('templates/testWsdlTemplate.hbs', 'utf8')
   const wsdlCompiledTemplte = Handlebars.compile(wsdlTemplate)
   return wsdlCompiledTemplte({
     serviceName: getServiceNameFromPistolConfiguration(pistolConfiguration),

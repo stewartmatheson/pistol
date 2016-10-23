@@ -4,20 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "run": "node ./harness/index.js",
     "test": "tape test/**/*.spec.js | tap-difflet",
-    "test:watch": "tape-watch test/**/*.spec.js | tap-difflet"
+    "test:watch": "tape-watch test/**/*.spec.js | tap-difflet",
+    "test:coverage": "istanbul cover tape -- test/**/*.spec.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.0.5",
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "soap": "^0.17.0"
   },
   "devDependencies": {
     "eslint": "^3.8.1",
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
     "tap-diff": "^0.1.1",
     "tap-difflet": "^0.7.0",
     "tap-spec": "^4.1.1",
