@@ -1,0 +1,27 @@
+{
+
+
+  "serviceName": "TestService",
+
+
+  "messages" : [
+    {
+      "name": "quote",
+      "fields": [
+        {
+          "name": "vehicleType",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+
+  "operations": [
+      {
+        "name": "quote",
+        "input" : "quote"
+      }
+  ]
+
+
+}
